@@ -1,0 +1,141 @@
+body, h1, p, button, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-shadow: 1px 1px #312682;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 1px 1px #312682
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(20, 72, 6), rgb(49, 193, 27));
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  display: block;
+  background-color: #FFCA00;
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #FFCA00;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 0 2px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.quiz-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-text {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background-color: #312682;
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out;
+}
+
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.answers-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.next-question {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: #312682;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+  transition: filter 0.1s;
+}
+
+.final-message {
+  font-size: 20px;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: #03ac4f;
+}
+
+.incorrect {
+  background-color: #850000;
+}
